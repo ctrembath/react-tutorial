@@ -5,21 +5,12 @@
 		<script src="http://fb.me/react-0.12.2.js"></script>
 		<scipt src="http://fb.me/JSXTransformer-0.12.2.js"></script>
 		<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		  <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+
 	</head>
 	<body>
 		<div id="content"></div>
 		<script type="text/jsx">
-
-		//tutorial2.js
-		var CommentList = React.createClass({
-			render: function() {
-				return (
-					<div className="commentList">
-					Hello, world! I am a CommentList.
-					</div>
-					);
-			}
-		});
 
 		//tutorial3.js
 		var CommentForm = React.createClass({
@@ -58,6 +49,20 @@
 					)
 			})
 		})
+
+		var Comment = React.createClass({
+			render: function() {
+				return (
+					<div className="comment">
+					<h2 className="commentAuthor">
+					{this.props.author}
+					</h2>
+					{this.props.children}
+					</div>
+					);
+					)
+			}
+		});
 React.render(
 	<CommentBox />,
 	document.getElementById('content')
