@@ -1,6 +1,6 @@
-== React tutorial
+# React tutorial
 
-## Aim
+## Aim 
 To gain an understanding of how REACT.JS works.
 
 
