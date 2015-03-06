@@ -1,9 +1,9 @@
 == React tutorial
 
-##Aim
+## Aim
 To gain an understanding of how REACT.JS works.
 
 
-###Following React Tutorial
+### Following React Tutorial
 http://facebook.github.io/react/docs/tutorial.html
 
